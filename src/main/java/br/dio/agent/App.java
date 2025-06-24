@@ -3,7 +3,7 @@ package br.dio.agent;
 public class App {
     public static void main(String[] args) {
         Sensor sensor = new SimulatedTemperatureSensor();
-        DecisionModule brain = new SimpleDecisionModule();
+        DecisionModule brain = new AdaptiveDecisionModule();//new SimpleDecisionModule();
         Actuator actuator = new SimulatedVentilador();
 
         Agent agent = new Agent(sensor, brain, actuator);
