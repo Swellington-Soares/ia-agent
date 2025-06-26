@@ -7,7 +7,7 @@ public class AdaptiveDecisionModule implements DecisionModule {
 
     private boolean ventiladorLigado = false;
     private final Queue<Double> historico = new LinkedList<>();
-    private final int MAX_HISTORICO = 30;
+    private final int MAX_HISTORICO = 10;
 
     @Override
     public Action decide(EnvironmentData input) {
